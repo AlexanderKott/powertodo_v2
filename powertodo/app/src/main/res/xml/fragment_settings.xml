@@ -1,0 +1,50 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory app:title="@string/set_password">
+        <SwitchPreferenceCompat
+            app:key="usePassword"
+            app:title="@string/use_password"
+            app:defaultValue="false"
+             />
+        <EditTextPreference
+            android:dialogMessage="@string/enter_password"
+            android:dialogTitle="@string/password_caption"
+            app:key="setPassword"
+            app:summary="@string/enter_password"
+            app:title="@string/password"
+            android:inputType="number"
+            />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/notificateAboutTimeChange">
+        <CheckBoxPreference
+            app:defaultValue="false"
+            app:key="time"
+            app:title="@string/time" />
+        <CheckBoxPreference
+            app:defaultValue="true"
+            app:key="tZone"
+            app:title="@string/time_zone" />
+        <CheckBoxPreference
+            app:defaultValue="true"
+            app:key="DateC"
+            app:title="@string/date" />
+    </PreferenceCategory>
+    <PreferenceCategory app:title="@string/Notifications">
+        <ListPreference
+            android:title="@string/alarm_sound_setup"
+            android:summary="@string/set_default_sound"
+            android:key="soundT"
+            android:defaultValue="1"
+            android:entries="@array/sound_entries"
+            app:isPreferenceVisible="false"
+            android:entryValues="@array/sound_entry_values" />
+        <Preference
+            app:isPreferenceVisible="false"
+            android:title="@string/alarm_sound_setup"
+            android:key="customSound"
+            android:summary="@string/set_default_sound"
+            />
+    </PreferenceCategory>
+
+</PreferenceScreen>

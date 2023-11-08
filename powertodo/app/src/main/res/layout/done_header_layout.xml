@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <data>
+
+        <variable
+            name="hdate"
+            type="String" />
+
+        <variable
+            name="item"
+            type="site.kotty_kov.powertodo.todolist.main.done.DoneRecord" />
+
+        <variable
+            name="handler"
+            type="site.kotty_kov.powertodo.todolist.main.done.HeaderHandler" />
+
+
+    </data>
+    <LinearLayout
+        android:layout_margin="3dp"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:onClick="@{view -> handler.click(view, item)}"
+        android:gravity="center_horizontal">
+    <TextView
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@drawable/rounded_corner"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:shadowColor="@android:color/white"
+        android:shadowDx="-2"
+        android:shadowDy="-2"
+        android:shadowRadius="1"
+        android:onClick="@{view -> handler.click(view, item)}"
+        android:id="@+id/doneItemText"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@{hdate}"
+        tools:text="header" />
+    </LinearLayout>
+</layout>

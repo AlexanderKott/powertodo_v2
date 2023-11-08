@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RadioButton
+            android:id="@+id/radioDays"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:padding="0dp"
+            android:tag="2"
+            android:text="@string/run_every"
+            app:layout_constraintStart_toStartOf="@+id/radio_disabled"
+            app:layout_constraintTop_toBottomOf="@+id/intervalspinner" />
+
+        <Button
+            android:id="@+id/timersDontWorkInfo"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:lines="1"
+            android:padding="0dp"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:singleLine="false"
+            android:text="@string/why_timers_may_not_to_work"
+            android:textAllCaps="false"
+            android:textColor="@color/gray"
+            android:textColorHint="@color/gray"
+            android:textStyle="italic"
+            app:iconPadding="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/timer_edit_done" />
+
+        <TimePicker
+            android:id="@+id/timePicker"
+            android:layout_width="242dp"
+            android:layout_height="127dp"
+            android:timePickerMode="spinner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sun" />
+
+        <CheckBox
+            android:id="@+id/sat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/sat"
+            app:layout_constraintStart_toStartOf="@+id/mon"
+            app:layout_constraintTop_toBottomOf="@+id/mon" />
+
+        <TextView
+            android:id="@+id/doneItemText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:tag="at"
+            android:text="@string/at"
+            app:layout_constraintBottom_toBottomOf="@+id/timePicker"
+            app:layout_constraintEnd_toStartOf="@+id/timePicker"
+            app:layout_constraintTop_toTopOf="@+id/timePicker" />
+
+        <CheckBox
+            android:id="@+id/sun"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/sun"
+            app:layout_constraintStart_toEndOf="@+id/sat"
+            app:layout_constraintTop_toTopOf="@+id/sat" />
+
+
+        <RadioButton
+            android:id="@+id/radioMinOrHours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:tag="1"
+            android:text="@string/start_the_timer_in"
+            app:layout_constraintStart_toStartOf="@+id/radio_disabled"
+            app:layout_constraintTop_toBottomOf="@+id/radio_disabled" />
+
+        <RadioButton
+            android:id="@+id/radio_disabled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:tag="0"
+            android:text="@string/timer_disabled"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/timer_edit_done"
+            style="@style/IconOnlyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="Done"
+            android:text="@string/done"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/timePicker" />
+
+        <CheckBox
+            android:id="@+id/mon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/mon"
+            app:layout_constraintStart_toStartOf="@+id/radioDays"
+            app:layout_constraintTop_toBottomOf="@+id/radioDays" />
+
+        <CheckBox
+            android:id="@+id/wed"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/wed"
+            app:layout_constraintStart_toEndOf="@+id/tue"
+            app:layout_constraintTop_toTopOf="@+id/tue" />
+
+        <CheckBox
+            android:id="@+id/tue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/tue"
+            app:layout_constraintStart_toEndOf="@+id/mon"
+            app:layout_constraintTop_toTopOf="@+id/mon" />
+
+        <Spinner
+            android:id="@+id/intervalspinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:entries="@array/timeSpinnerItems"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioMinOrHours" />
+
+        <CheckBox
+            android:id="@+id/thu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/thu"
+            app:layout_constraintStart_toEndOf="@+id/wed"
+            app:layout_constraintTop_toTopOf="@+id/wed" />
+
+
+        <CheckBox
+            android:id="@+id/fr"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/fr"
+            app:layout_constraintStart_toEndOf="@+id/thu"
+            app:layout_constraintTop_toTopOf="@+id/thu" />
+
+        <CheckBox
+            android:id="@+id/repeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:text="@string/repeat"
+            app:layout_constraintStart_toEndOf="@+id/radioMinOrHours"
+            app:layout_constraintTop_toTopOf="@+id/radioMinOrHours" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

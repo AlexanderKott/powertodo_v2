@@ -1,0 +1,161 @@
+<resources>
+    <string name="app_name">PowerToDo</string>
+    <string name="tab_text_1">To Do</string>
+    <string name="tab_text_2">In progress</string>
+    <string name="tab_text_3">Done</string>
+    <string name="notepad">Notepad</string>
+    <string name="setup">Settings</string>
+    <string name="about">About</string>
+    <string name="clearDone">Clear Done</string>
+    <string name="close">Close app</string>
+    <string name="schedule">Take to work</string>
+    <string name="delete">Delete</string>
+    <string name="multiline">Every line as new Todo item</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="scheduleAgain">"Schedule again"</string>
+    <string name="chooser">Share task</string>
+
+    <string-array name="timeSpinnerItems">
+        <item name="time1"> 1 min</item>
+        <item name="time2"> 5 min</item>
+        <item name="time3"> 7 min</item>
+        <item name="time4"> 10 min</item>
+        <item name="time5"> 15 min</item>
+        <item name="time6"> 20 min</item>
+        <item name="time7"> 30 min</item>
+        <item name="time8"> 45 min</item>
+        <item name="time9"> 60 min</item>
+        <item name="time10"> 2 hours</item>
+        <item name="time11"> 3 hours</item>
+    </string-array>
+
+    <string-array name="log_time">
+        <item name="time1">+ 15 min"</item>
+        <item name="time2">+ 30 min</item>
+        <item name="time3">+ 1 hour</item>
+        <item name="time4">+ 3 hours</item>
+        <item name="time5">+ 4 hours</item>
+        <item name="time6">+ 8 hours</item>
+        <item name="time7">- 5 min</item>
+        <item name="time8">- 15 min</item>
+        <item name="time9">- 1 hours</item>
+        <item name="time10">- 3 hours</item>
+        <item name="time11">- 8 hours</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="todo">To Do</string>
+    <string name="list_is_empty">Hi, your list is empty</string>
+    <string name="criterahint">The criteria must be clear, understandable and measurable</string>
+    <string name="delegate_task">Delegate task</string>
+    <string name="details">Details</string>
+    <string name="acceptance_criteria">Acceptance criteria</string>
+    <string name="undone">undone</string>
+    <string name="NothingToDisplay">Nothing to display</string>
+    <string name="markAsFail">Mark as fail</string>
+    <string name="itemMarkedasFailed">Item marked as failed</string>
+    <string name="markAsDone">Mark as Done</string>
+    <string name="ItemMarkedAsDone">Item marked as done</string>
+    <string name="timerset">Timer set %1$s</string>
+    <string name="timerisNotset">Timer is not set!</string>
+    <string name="scheduledagain">This item was scheduled again</string>
+    <string name="jsonDialogCaption">Share items in JSON format</string>
+    <string name="jsonDialogBody">If you click the caption, you can share all records that belongs to it. \nAlso you can share any particular record by clicking on it\'s status.\n\n Fo programmers:\n Do you want to share all done records in JSON format?</string>
+    <string name="doneItemFromat">-----------------------------  \nTask #%1$d Date: %2$s \n%3$s   \nResult: %4$s\n</string>
+    <string name="InprogressItemFromat">Your task: #%1$d  Date:%2$s \n %3$s \n</string>
+    <string name="criteria">Acceptance criteria/details: %1$s \n</string>
+    <string name="elapsedtime">Elapsed Time: %1$s</string>
+    <string name="detectedExpiredTimers">Expired timers are detected</string>
+    <string name="twerereset">Some timers were reset</string>
+    <string name="yourTask">Your Task #%1$d</string>
+    <string name="alarms" translatable="false"> Alarms</string>
+    <string name="chanalDescr">Timers signals from alarms</string>
+    <string name="twaschanged">Device\'s time was changed</string>
+    <string name="stillprop">Please check your timers are still set properly</string>
+    <string name="delete_are_u_sure">Delete</string>
+    <string name="emptynote">* empty * \n</string>
+    <string name="run_every">Run every</string>
+    <string name="sat">Sat</string>
+    <string name="at">at</string>
+    <string name="sun">Sun</string>
+    <string name="start_the_timer_in">Start the timer in</string>
+    <string name="timer_disabled">Timer disabled</string>
+    <string name="done">Done</string>
+    <string name="mon">Mon</string>
+    <string name="wed">Wed</string>
+    <string name="tue">Tue</string>
+    <string name="thu">Thu</string>
+    <string name="fr">Fr</string>
+    <string name="repeat">every</string>
+    <string name="textCopied">Text copied</string>
+    <string name="notepad_q">Quit</string>
+    <string name="confirmExit">Press back again to close this app</string>
+    <string name="clearPassChar" translatable="false">&#10060;</string>
+
+    <string name="passwordCaption">Your password</string>
+    <string name="passwordYouCannot">Sorry, you cannot use 0000 password.</string>
+    <string name="passwordIsSet">Your password is set!</string>
+    <string name="passwordTypePrevPassword">Please type your previous password</string>
+    <string name="passwordIsWrong">"Wrong password! "</string>
+    <string name="passwordIsReset">Password were reset!</string>
+    <string name="passwordSetFirst">Set password First!</string>
+    <string name="passwordDosentFit">Your password is too short!</string>
+    <string name="nope">Nope!</string>
+    <string name="textSaved">Text saved!</string>
+
+    <string-array name="sound_entries">
+        <item>Mute</item>
+        <item>Default Beep</item>
+        <item>Xilo</item>
+        <item>Bells</item>
+        <item>Guitar</item>
+        <item>Harp</item>
+    </string-array>
+
+    <string-array name="sound_entry_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string name="aboutAndLicence">About and License </string>
+
+    <string name="aboutText">Copyright 2021 Alexander Kotikov \n\n
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+        The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+\n\nTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+  \n\n if you do not agree, please refuse to use this software.
+
+
+     \n\n   Programmer : Alexander Kotikov
+     \n\n   Graphics: Marina K., Freepik
+     \n\n   Sound: Free sound bank
+
+    </string>
+    <string name="why_timers_may_not_to_work">* Why timers may not to work</string>
+    <string name="TimersInfo">Timers</string>
+    <string name="TimersText">All Android devices are different. The author of this software cannot test all of them. Make sure that this application has been given permissions: autoload, notifications (high priority), play sounds. Disable the \"smart\" mode of saving the resources of the device, enable the \"normal\" or \"no restrictions\" mode (if any). Switch \"Do not disturb\" off. \n \n Please note that a large number of timers with frequent periods may negatively affect the battery power of your device.</string>
+    <string name="use_password">Use password</string>
+    <string name="enter_password">Set password. App will be automatically locked in 60 seconds of inactivity. \nPlease note that: This password cannot protect you from experienced intruders!</string>
+    <string name="password">Password</string>
+    <string name="notificateAboutTimeChange">Notify of changes:</string>
+    <string name="time">time</string>
+    <string name="time_zone">time-zone</string>
+    <string name="date">date</string>
+    <string name="Notifications">Notifications</string>
+    <string name="alarm_sound_setup">Alarm sound setup</string>
+    <string name="set_default_sound">Set default sound for your alarm clock</string>
+    <string name="set_password">Password protection</string>
+    <string name="password_caption">Password</string>
+    <string name="your_to_do_list">Your To Do List</string>
+    <string name="justDefaultBeep">You will listen to a sound, according your defaults</string>
+    <string name="noSound">Mute!</string>
+    <string name="setups">Settings</string>
+    <string name="loading">Loading...</string>
+
+
+</resources>

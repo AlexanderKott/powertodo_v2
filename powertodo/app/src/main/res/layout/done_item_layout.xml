@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <data>
+        <import type="site.kotty_kov.powertodo.todolist.main.common.utils.ColorUtils"/>
+
+        <variable
+            name="text"
+            type="String" />
+
+        <variable
+            name="itemColor"
+            type="Integer" />
+
+        <variable
+            name="status"
+            type="String" />
+
+        <variable
+            name="done"
+            type="Boolean" />
+
+        <variable
+            name="lines"
+            type="Integer" />
+
+        <variable
+            name="item"
+            type="site.kotty_kov.powertodo.todolist.main.done.DoneRecord" />
+
+        <variable
+            name="handler"
+            type="site.kotty_kov.powertodo.todolist.main.done.ItemHandler" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@{ColorUtils.INSTANCE.parse(itemColor)}"
+        >
+
+        <TextView
+            android:textIsSelectable="true"
+            app:layout_constrainedWidth="true"
+            android:id="@+id/doneItemText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="3dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:elegantTextHeight="true"
+            android:focusable="true"
+            android:gravity="left|start"
+            android:inputType="textMultiLine"
+
+            android:singleLine="false"
+            android:text="@{text}"
+            android:enabled="true"
+            android:longClickable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/status"
+            app:layout_constraintTop_toTopOf="@+id/status"
+            />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:padding="3dp"
+            android:text="@{status}"
+            android:textColor="@{done ? @android:color/holo_green_dark : @android:color/holo_red_dark}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:onClick="@{view -> handler.click(view, item)}"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#868686"
+            app:layout_constraintBottom_toBottomOf="@+id/doneItemText"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

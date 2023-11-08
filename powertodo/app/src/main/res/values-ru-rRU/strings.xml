@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PowerToDo</string>
+    <string name="tab_text_1">Сделать</string>
+    <string name="tab_text_2">В работе</string>
+    <string name="tab_text_3">Сделано</string>
+    <string name="setup">Настройки</string>
+    <string name="notepad">Блокнот</string>
+    <string name="about">Об авторе</string>
+    <string name="clearDone">Очистить готовые</string>
+    <string name="close">Закрыть</string>
+    <string name="schedule">Взять в работу</string>
+    <string name="delete">Удалить</string>
+    <string name="multiline">Строка как отдельная заметка</string>
+    <string name="ok">Ок</string>
+    <string name="cancel">Отмена</string>
+    <string name="scheduleAgain">Запланировать еще раз</string>
+    <string name="chooser">Поделиться здачей</string>
+    <string name="list_is_empty">Привет, твой список пока пуст</string>
+    <string name="criterahint">Критерии должны быть понятные, четкие и достижимые</string>
+    <string name="todo">To Do</string>
+    <string name="delegate_task">Делегировать задачу</string>
+    <string name="done">Готово</string>
+    <string name="details">Детали</string>
+    <string name="acceptance_criteria">Критерии выполнения</string>
+    <string name="undone">Не \nсделано</string>
+    <string name="NothingToDisplay">Нечего отобразить</string>
+    <string name="markAsFail">Не выполнено</string>
+    <string name="itemMarkedasFailed">Отмечено как \"не сделанное\"</string>
+    <string name="markAsDone">Готово</string>
+    <string name="ItemMarkedAsDone">Отмечено как \"выполнено\"</string>
+    <string name="timerset">Таймер установлен %1$s</string>
+    <string name="elapsedtime">Затрачено времени: %1$s</string>
+    <string name="timerisNotset">Таймер не установлен!</string>
+    <string name="scheduledagain">Задача запланирована снова</string>
+    <string name="jsonDialogCaption">Поделиться записями в JSON формате</string>
+    <string name="jsonDialogBody">Если вы нажмете на заголовок, вы можете поделиться всеми записями, которые к нему принадлежат. \n Также вы можете поделиться любой записью, нажав на ее статус.\n\n Для программистов:\n Хотите получить все done записи в JSON формате?</string>
+    <string name="doneItemFromat">----------------------------- \n Задача #%1$d Дата: %2$s |\n %3$s \nРезультат: %4$s\n</string>
+    <string name="InprogressItemFromat">"Вам задача: #%1$d  Дата:%2$s \n %3$s \n "</string>
+    <string name="criteria">Приёмка/детали: %1$s \n</string>
+    <string name="detectedExpiredTimers">Найдены просроченные таймеры</string>
+    <string name="twerereset">Некоторые таймер(ы) были сброшены</string>
+    <string name="yourTask">Задача #%1$d</string>
+    <string name="chanalDescr">Сигналы от будильников</string>
+    <string name="twaschanged">Время устройства было изменено</string>
+    <string name="stillprop">Убедитесь что ваши таймеры все еще установленны правильно</string>
+    <string name="delete_are_u_sure">Удалить</string>
+    <string name="emptynote">* пустая запись *</string>
+    <string name="run_every">Запускать каждый</string>
+    <string name="sat">Сб</string>
+    <string name="at">в</string>
+    <string name="sun">Вс</string>
+    <string name="start_the_timer_in">Запустить таймер через</string>
+    <string name="timer_disabled">Таймер выключен</string>
+    <string name="mon">Пн</string>
+    <string name="wed">Ср</string>
+    <string name="tue">Вт</string>
+    <string name="thu">Чт</string>
+    <string name="fr">Пт</string>
+    <string name="repeat">каждые</string>
+    <string name="textCopied">текст скопирован</string>
+    <string name="notepad_q">Закрыть</string>
+    <string name="confirmExit">Нажмите еще раз для выхода</string>
+    <string name="aboutText" translatable="false">Copyright (c) 2021  Котиков Александр \n\n
+        Данная лицензия разрешает лицам, получившим копию данного программного обеспечения и сопутствующей документации (в дальнейшем именуемыми «Программное обеспечение»), безвозмездно использовать Программное обеспечение без ограничений, включая неограниченное право на использование, копирование, изменение, слияние, публикацию, распространение, а также лицам, которым предоставляется данное Программное обеспечение, при соблюдении следующих условий:Указанное выше уведомление об авторском праве и данные условия должны быть включены во все копии или значимые части данного Программного обеспечения.
+        \n\nДАННОЕ ПРОГРАММНОЕ ОБЕСПЕЧЕНИЕ ПРЕДОСТАВЛЯЕТСЯ «КАК ЕСТЬ», БЕЗ КАКИХ-ЛИБО ГАРАНТИЙ, ЯВНО ВЫРАЖЕННЫХ ИЛИ ПОДРАЗУМЕВАЕМЫХ, ВКЛЮЧАЯ ГАРАНТИИ ТОВАРНОЙ ПРИГОДНОСТИ, СООТВЕТСТВИЯ ПО ЕГО КОНКРЕТНОМУ НАЗНАЧЕНИЮ И ОТСУТСТВИЯ НАРУШЕНИЙ, НО НЕ ОГРАНИЧИВАЯСЬ ИМИ. НИ В КАКОМ СЛУЧАЕ АВТОРЫ ИЛИ ПРАВООБЛАДАТЕЛИ НЕ НЕСУТ ОТВЕТСТВЕННОСТИ ПО КАКИМ-ЛИБО ИСКАМ, ЗА УЩЕРБ ИЛИ ПО ИНЫМ ТРЕБОВАНИЯМ, В ТОМ ЧИСЛЕ, ПРИ ДЕЙСТВИИ КОНТРАКТА, ДЕЛИКТЕ ИЛИ ИНОЙ СИТУАЦИИ, ВОЗНИКШИМ ИЗ-ЗА ИСПОЛЬЗОВАНИЯ ПРОГРАММНОГО ОБЕСПЕЧЕНИЯ ИЛИ ИНЫХ ДЕЙСТВИЙ С ПРОГРАММНЫМ ОБЕСПЕЧЕНИЕМ.
+   \n\n Если вы не согласны, пожалуйста откажитесь от использования данного Программного обеспечения.
+
+        \n\n Программист: Котиков Александр
+        \n\n Графика:  Марина К., Freepik
+        \n\n Звук: Free sound bank
+    </string>
+    <string name="passwordCaption">Ваш пароль</string>
+    <string name="passwordYouCannot">Извините, вы не можете использовать этот пароль</string>
+    <string name="passwordIsSet">Пароль установлен!</string>
+    <string name="passwordTypePrevPassword">Пожалуйста введите предыдущий пароль</string>
+    <string name="passwordIsWrong">Неверный пароль!</string>
+    <string name="passwordIsReset">Пароль был сброшен!</string>
+    <string name="passwordSetFirst">Сначала установите пароль!</string>
+    <string name="passwordDosentFit">Пароль слишком короткий</string>
+    <string name="nope">Неа!</string>
+    <string name="textSaved">Текст сохранен</string>
+    <string name="aboutAndLicence">Лицензия</string>
+    <string name="why_timers_may_not_to_work">* Почему таймеры могут не работать</string>
+    <string name="TimersInfo">Таймеры</string>
+    <string name="TimersText">Все устройства на Андроид разные. Автор данного ПО не может протестировать их все. Убедитесь, что данному приложению даны разрешения: автозагрузка, нотификации (высокий приоритет), проигрывать звуки. Отключите \"умный\" режим экономии ресурсов устройства, включите режим \"обычный\" или \"без ограничений\" (если он есть). Отключите функцию \"не беспокоить\". \n\n Имейте ввиду, что большое количество таймеров с частым периодом может негативно отразиться на заряде батареи Вашего устройства.</string>
+    <string name="use_password">Использовать пароль</string>
+    <string name="enter_password">Установка пароля. Приложение будет автоматически заблокировано через 60 секунд бездействия. \nОбратите внимание: этот пароль не может защитить вас от опытных злоумышленников!</string>
+    <string name="password">password</string>
+    <string name="notificateAboutTimeChange">Уведомлять об изменении времени</string>
+    <string name="time">часы</string>
+    <string name="time_zone">тайм-зона</string>
+    <string name="date">дата</string>
+    <string name="Notifications">Уведомления</string>
+    <string name="alarm_sound_setup">Установить звук таймеров</string>
+    <string name="set_default_sound">Установить звук для всех таймеров</string>
+    <string name="set_password">Защита паролем</string>
+    <string name="password_caption">Пароль</string>
+    <string name="your_to_do_list">Ваш список дел</string>
+    <string name="justDefaultBeep">Вы услышите стандарный звук сообщения</string>
+    <string name="noSound">Без звука</string>
+    <string name="setups">Настройки</string>
+
+</resources>

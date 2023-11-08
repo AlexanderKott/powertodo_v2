@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+     >
+
+    <ViewFlipper
+        android:id="@+id/viewflipper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_navigationN"
+        android:layout_marginBottom="@dimen/bottomNav"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/notes_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/layout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+        <TextView
+            android:id="@+id/text_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/list_is_empty" />
+
+        <ImageView
+            android:id="@+id/placeholder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            app:srcCompat="@drawable/ic_bloknotik" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <site.kotty_kov.powertodo.todolist.main.notepad.LinedEditText
+            android:id="@+id/linedEdit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#EDE593"
+            android:padding="5dp"
+            android:scrollbars="vertical"
+            android:fadingEdge="vertical"
+            android:gravity="start"
+            android:layout_marginTop="15dp"
+            android:hint= "write here"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:scrollbarSize="3dp"
+            android:textSize="16sp"
+            android:capitalize="sentences"
+            android:minLines="6"
+              />
+
+
+    </ViewFlipper>
+
+
+    <include
+        android:id="@+id/bottom_navigationN"
+        layout="@layout/notepad_bottom_sheet" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

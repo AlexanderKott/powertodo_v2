@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".todolist.main.inprogress.view.InProgressEditRecordFragment">
+
+
+        <EditText
+            android:id="@+id/acceptanceCriteria"
+            android:layout_width="0dp"
+            android:layout_height="170dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="@string/criterahint"
+            android:inputType="textMultiLine"
+            android:minLines="4"
+            android:singleLine="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+
+        <Button
+            android:id="@+id/delegate"
+            style="@style/IconOnlyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/delegate_task"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/record_button_done"
+            app:layout_constraintTop_toTopOf="@+id/record_button_done" />
+
+        <Button
+            android:id="@+id/timeTrack"
+            style="@style/IconOnlyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="elapsed time 1h 30 min"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detailsEdit" />
+
+        <Button
+            android:id="@+id/record_button_done"
+            style="@style/IconOnlyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/done"
+            app:layout_constraintEnd_toStartOf="@+id/delegate"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/acceptanceCriteria" />
+
+        <View
+            android:id="@+id/separator"
+            android:layout_width="fill_parent"
+            android:layout_height="0.2dp"
+            android:background="@android:color/darker_gray"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detailsEdit" />
+
+        <View
+            android:id="@+id/separator2"
+            android:layout_width="fill_parent"
+            android:layout_height="0.2dp"
+            android:background="@android:color/darker_gray"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/timeTrack" />
+
+        <EditText
+            android:id="@+id/detailsEdit"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:ems="10"
+            android:gravity="top|left"
+            android:inputType="textMultiLine"
+            android:minLines="6"
+            android:singleLine="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/taskdetails" />
+
+        <TextView
+            android:id="@+id/taskdetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/details"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/taskNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="#"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/taskdetails"
+            app:layout_constraintTop_toTopOf="@+id/taskdetails" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/acceptance_criteria"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/timeTrack" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
