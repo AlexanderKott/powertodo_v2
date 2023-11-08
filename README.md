@@ -16,3 +16,7 @@ Power ToDo
 Есть удобная зона свайпа между экранами, на ее создание меня вдохновила клавиатура телефона Blackberry =)
 
 Стек: Kotlin, MVVM, Room, корутины, fragments, child-fragments, Broadcast receiver, gesturedetector, AlarmManager
+
+
+Скриншоты:
+![alt text](https://github.com/AlexanderKott/powertodo_v2/blob/main/images/Screenshot_1656423924.png?raw=true)
