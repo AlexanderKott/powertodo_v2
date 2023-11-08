@@ -20,5 +20,9 @@ Power ToDo
 
 Скриншоты:
 
-
-<img src="https://github.com/AlexanderKott/powertodo_v2/blob/main/images/Screenshot_1656423924.png?raw=true" width="128"/>
+<img src="https://github.com/AlexanderKott/powertodo_v2/blob/main/images/Screenshot_1656423924.png?raw=true" width="512"/>
+<img src="https://github.com/AlexanderKott/powertodo_v2/blob/main/images/Screenshot_1656423936.png?raw=true" width="512"/>
+<img src="https://github.com/AlexanderKott/powertodo_v2/blob/main/images/Screenshot_1656423960.png?raw=true" width="512"/>
+<img src="https://github.com/AlexanderKott/powertodo_v2/blob/main/images/Screenshot_1656423977.png?raw=true" width="512"/>
+<img src="https://github.com/AlexanderKott/powertodo_v2/blob/main/images/Screenshot_1656423986.png?raw=true" width="512"/>
+<img src="https://github.com/AlexanderKott/powertodo_v2/blob/main/images/Screenshot_1656424008.png?raw=true" width="512"/>
