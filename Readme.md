@@ -16,5 +16,5 @@ Power ToDo
 
 Стек: Kotlin, MVVM, Room, корутины, fragments, child-fragments, Broadcast receiver, gesturedetector, AlarmManager
 
-
+Скриншоты:
 ![alt text](https://github.com/AlexanderKott/powertodo_v2/blob/main/images/Screenshot_1656423924.png?raw=true)
