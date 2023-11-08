@@ -19,4 +19,6 @@ Power ToDo
 
 
 Скриншоты:
-![alt text](https://github.com/AlexanderKott/powertodo_v2/blob/main/images/Screenshot_1656423924.png?raw=true)
+
+
+<img src="https://github.com/AlexanderKott/powertodo_v2/blob/main/images/Screenshot_1656423924.png?raw=true" width="128"/>
